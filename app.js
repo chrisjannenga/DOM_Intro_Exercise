@@ -17,3 +17,15 @@ for (i = 0; i < listItems.length; i++) {
 var img = document.createElement("img");
 img.src = "http://49.media.tumblr.com/tumblr_m6qt1rjPSz1rxjzkho1_500.gif";
 document.getElementById('greeting').appendChild(img);
+
+
+// Add the class of selected to an <li> when it is clicked. Remove it from any other lis as well.
+
+function selectListItem() {
+  var selectedText = getElementById('essentials');
+  for (i = 0; i < selectedText.length; i++) {
+    selectedText[0].className = "selected";
+  }
+}
+
+document.onclick = selectListItem;
