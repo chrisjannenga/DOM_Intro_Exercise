@@ -19,3 +19,9 @@ $("li").click(function() {
 });
 
 // Task 5
+
+$("li").mousedown(function() {
+  $("img:odd").attr("src", "images/" + $(event.target).html() + ".jpeg");
+})
+
+// Task 6
