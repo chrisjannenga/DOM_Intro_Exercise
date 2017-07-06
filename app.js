@@ -21,11 +21,13 @@ document.getElementById('greeting').appendChild(img);
 
 // Add the class of selected to an <li> when it is clicked. Remove it from any other lis as well.
 
-function selectListItem() {
-  var selectedText = getElementById('essentials');
-  for (i = 0; i < selectedText.length; i++) {
-    selectedText[0].className = "selected";
+document.addEventListener("click", function(event) {
+  document.getElementsByTagName('li');
+  if (event.target.className === 'selected') {
+    event.target.className = '';
+  } else {
+    event.target.className = 'selected';
   }
-}
+})
 
-document.onclick = selectListItem;
+// Change the image to be the most recently clicked food item.
