@@ -20,8 +20,12 @@ $("li").click(function() {
 
 // Task 5
 
-$("li").mousedown(function() {
-  $("img:odd").attr("src", "images/" + $(event.target).html() + ".jpeg");
+$('#essentials li').click(function() {
+  $('.selected').removeClass();
+  $(this).toggleClass('selected');
+  $('img[alt="beer"]').attr("src", "images/" + $(this).text() + ".jpeg")
 })
 
 // Task 6
+
+$('#ghosting').remove('mouseover');
