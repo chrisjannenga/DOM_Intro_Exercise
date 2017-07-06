@@ -28,4 +28,6 @@ $('#essentials li').click(function() {
 
 // Task 6
 
-$('#ghosting').remove('mouseover');
+$('#ghosting').mouseenter(function() {
+  $("#ghosting").remove();
+});
